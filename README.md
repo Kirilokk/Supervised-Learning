@@ -34,9 +34,9 @@ project
 ```
 
 
-# Data view
+## Data view
 
-Here how our data set looks like:
+Here how our data set looks like:(head(10))
 
 | Index | Height   | Width |
 | ------|:--------:| -----:|
@@ -47,12 +47,17 @@ Here how our data set looks like:
 | 4     |  645     | 256   |
 | 5     |  493     | 200   |
 | 6     |  606     | 226   |
-| 7     |  660     | 240   |s
+| 7     |  660     | 240   |
 | 8     |  550     | 215   |
 | 9     |  480     | 185   |
 
 
+## Dataset visualisation
+
+<img align="center" src="https://github.com/Kirilokk/Supervised-Learning/tree/main/media/DatasetVisual.png">
 
 
+**Important note:**
+>  It is important to find linear relationship(straight line) between target and one or more predictors
 
 
