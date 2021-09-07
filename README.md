@@ -54,10 +54,9 @@ Here how our data set looks like:(head(10))
 
 ## Dataset visualisation
 
-<img align="center" src="https://github.com/Kirilokk/Supervised-Learning/tree/main/media/DatasetVisual.png">
-
+![alt text](media/DatasetVisual.png ":)")​
 
 **Important note:**
->  It is important to find linear relationship(straight line) between target and one or more predictors
+>  It is important to find **linear relationship(straight line)** between target and one or more predictors
 
 
