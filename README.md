@@ -6,8 +6,51 @@
 + Polynomial Ridge Regression;
 
 
+# Lineral regression with one variable 
 
-## Linear regression is used for finding linear relationship between target and one or more predictors. In this example, it is used to predict kangaroo nasal width *having* its *length*.
+*Linear regression is used for finding linear relationship between target and one or more predictors.
+In this example, it is used to predict kangaroo nasal width *having* its *length*.*
+
+
+# Project Structure
+
+To keep code organized, it's important to make project structure well.
+```
+
+project
+    │──── core              - main parts of core. 
+    │       ├── optimize.py         - update function.
+    │       └── regression.py       - main components of linReg.
+    │   
+    │   
+    │──── data            - data manipulation
+    │       ├── dataPreparation.py   - data load and standardization 
+    │       └── dataVisualisation.py - test/train visualisation
+    │
+    │
+    └───── interactor             
+            └── index.py.            - script to run lineral regression
+
+```
+
+
+# Data view
+
+Here how our data set looks like:
+
+| Index | Height   | Width |
+| ------|:--------:| -----:|
+| 0     |  609     | 241   |
+| 1     |  629     | 222   |
+| 2     |  620     | 265   |
+| 3     |  564     | 298   |
+| 4     |  645     | 256   |
+| 5     |  493     | 200   |
+| 6     |  606     | 226   |
+| 7     |  660     | 240   |s
+| 8     |  550     | 215   |
+| 9     |  480     | 185   |
+
 
 
 
