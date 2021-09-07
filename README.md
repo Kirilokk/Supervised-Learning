@@ -9,7 +9,7 @@
 # Lineral regression with one variable 
 
 *Linear regression is used for finding linear relationship between target and one or more predictors.
-In this example, it is used to predict kangaroo nasal width *having* its *length*.*
+In this example, it is used to predict kangaroo nasal width *having* its *Length*.*
 
 
 # Project Structure
@@ -38,7 +38,7 @@ project
 
 Here how our data set looks like:(head(10))
 
-| Index | Height   | Width |
+| Index | Length   | Width |
 | ------|:--------:| -----:|
 | 0     |  609     | 241   |
 | 1     |  629     | 222   |
@@ -63,6 +63,6 @@ Here how our data set looks like:(head(10))
 ## The results
 
 As a result of Linear regression with one variable algorithm, we got the next relationship, 
-where the straight line represents the relation between height and width of kangaroo nasal
+where the straight line represents the relation between Length and width of kangaroo nasal
 
 ![alt text](media/resultPlots.png ":)")​
