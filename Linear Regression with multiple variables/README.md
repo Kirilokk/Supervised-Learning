@@ -8,8 +8,8 @@
 
 # Lineral regression with multiple variables
 
-*Linear regression is used for finding linear relationship between target and one or more predictors.*
-LR with with multiple variables is more vectorized that with one variable where we used scalar values mainly.
+*Linear regression is used for finding linear relationship between target and one or more predictors.*<br/>
+LR with with multiple variables is more vectorized that with one variable where we used scalar values mainly.<br/>
 *In this example, it is used to predict *Boston House Prices* having its additional information(ll be shown next)*
 
 # Project Structure
@@ -79,15 +79,16 @@ Here is shown house price dependency from house feature shown above ^
 >  It is important to find **linear relationship(straight line)** between target and one or more predictors
 
 ## Some necessary information: 
-Here is some core formulas used to find **cost function** and **gradient descent**
-![formula](https://render.githubusercontent.com/render/math?math=J=\frac{1}{2m}*\Sigma(h^{i}%20-%20y^{i})^{2})
+Here is some core formulas used to find **cost function** and **gradient descent**<br/>
+
+### Cost function is a function that measures the perfomance of a Machine Learning model for given data<br/> ![formula](https://render.githubusercontent.com/render/math?math=J=\frac{1}{2m}*\Sigma(h^{i}%20-%20y^{i})^{2})
 
 
 
 
 ## The results
 
-As a result of Linear regression with one variable algorithm, we got the next relationship, 
-where the straight line represents the relation between Length and width of kangaroo nasal
+As a result of Linear regression with multiple variables algorithm, we got quite nice linear dependecy between predicted and true values
+where the straight line represents the relation between price and number of features.
 
 ![alt text](media/Result.png ":)")​
