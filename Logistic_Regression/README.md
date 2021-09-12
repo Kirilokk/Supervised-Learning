@@ -17,7 +17,7 @@ In this example, it is used to classify pictures with and without cats.
 
 # Sigmoid function
 
-*Logistic regression algorithm is based on Sigmoid function. It is a  "S"-shaped curved mathematical function that ranges from 0 to 1.<br/>
+Logistic regression algorithm is based on Sigmoid function. It is a  "S"-shaped curved mathematical function that ranges from 0 to 1.<br/>
 If "our function" goes to infinity, Y(predicted) will become 1 and if it goes to negative infinity, Y(predicted) will become 0.
 
 ![alt text](media/sigmoid.png ":)")​
@@ -56,8 +56,7 @@ As a input data, we have two **Hierarchical Data Format** files:
 Each image has three features(64(width), 64(height) and 3(RGB)) and we need to have all the pixels as features. **So, total number of features will be: 64*64*3 = 12228**.**
 
 Let's try to show the pictrure:
-index = 42
-plt.imshow(train_set_x[:,index].reshape((64, 64, 3)))
+
 ```python
 import matplotlib.pyplot as plt
 import random
@@ -74,7 +73,7 @@ As a result,we have:
 
 To represent color images, the red, green and blue channels (RGB) must be specified for each pixel, and so the pixel value is actually a vector of three numbers ranging from 0 to 255.
 
->Before run of our algorith, we have to standardize our data(This process will make gradient descent work faster)
+>Before run of our algorithm, we have to standardize our data(This process will make gradient descent work faster)
 it is simpler and more convenient and works almost as well to just divide every row of the dataset by 255 (the maximum value of a pixel channel).
 ```python
 
@@ -85,4 +84,5 @@ test_set_x = test_set_x / 255.
 ## The results
 
 ![alt text](media/result.png ":)")​
+
 ![alt text](media/result2.png ":)")​
