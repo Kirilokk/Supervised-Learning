@@ -85,4 +85,3 @@ test_set_x = test_set_x / 255.
 
 ![alt text](media/result.png ":)")​
 
-![alt text](media/result2.png ":)")​
