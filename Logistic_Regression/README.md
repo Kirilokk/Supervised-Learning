@@ -82,6 +82,9 @@ test_set_x = test_set_x / 255.
 ```
 
 ## The results
+![alt text](media/isCat.png "^_^")​
 
-![alt text](media/result.png ":)")​
+
+
+![alt text](media/notCat.PNG ":)")​
 
