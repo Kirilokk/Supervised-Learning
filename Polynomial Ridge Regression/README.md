@@ -3,27 +3,23 @@
 + Lineral regression with one variable;
 + Lineral regression with multiple variables;
 + Logistic regression;
-+ ### **Polynomial Ridge Regression;**
++ **Polynomial Ridge Regression;**
 
 
 # Polynomial Ridge Regression  
 
-Not everything we can visualise with a straight line. Sometimes the prediction may be unpredictable. In case of this, our solution is **Polynomial Ridge Regression**.<br/>
+Not everything we can visualise with a straight line. Sometimes the prediction may be unpredictable. In case of this, our solution is **Polynomial Ridge Regression**.
 In this type of regression the input parameters are used to create higher nth degree polynomials on which a model is trained for prediction. As a result, we will have a curve representing our dataset.
 
 
-As for *Ridge regression*, it's quite useful regularization technique used to adress over-fitting(when a statistical model fits exactly against its training data and againts test examples fails).<br/>
+As for **Ridge regression**, it's quite useful regularization technique used to adress over-fitting*(when a statistical model fits exactly against its training data and againts test examples fails).*
+
 It is very similar to Linear Regression only that it differs in cost function. Here we have some **penalty term(lambda)** <br/>The lambda parameter controls the shrinkage of the term. If it’s set to 0 then the entire equation becomes like normal Linear Regression curve and high values of lambda ensure the ridge regression to overfit the data.
 
 
 # Ridge regression formula used in algorithm:
 
 ![alt text](media/Ridge_regression_formula.gif "^_^")​
-
-
-## Data view
-
-Here how our data set looks like:(head())
 
 
 ## Data view
@@ -51,7 +47,25 @@ Here is shown temperature dependency from days in year:
 ![alt text](media/data_plot.png ":)")​
 
 
-## The results
+## The results using matplot
+
+```python
+
+# Predict for all points in set
+y_val = model.predict(full_feature_set_for_plot)
+    
+# Plot the results
+m1 = plt.scatter(366 * train_set_x, train_set_y, color=cmap(0.9), s=10)
+m2 = plt.scatter(366 * test_set_x, test_set_y, color=cmap(0.5), s=10)
+plt.plot(366 * full_feature_set_for_plot.T, y_val.T, color='black', linewidth=2, label="Prediction")
+plt.suptitle("Polynomial Ridge Regression")
+plt.title("MSE: %.2f" % mse, fontsize=10)
+plt.xlabel('Day')
+plt.ylabel('Temperature in Celcius')
+plt.legend((m1, m2), ("Training data", "Test data"), loc='lower right')
+plt.show()
+
+```
 
 As we can see, our model fits well the hypothesis function to the data. Despite having high-degree polynomials, we prevented overfitting by using the **L2 Regularization(Ridge)** - method for penalizing high magnitudes of parameters estimates. Also we implemented *Polynomial Ridge Regression* model with OOP in mind.
 
