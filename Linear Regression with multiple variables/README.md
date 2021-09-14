@@ -81,7 +81,8 @@ Here is shown house price dependency from house feature shown above ^
 ## Some necessary information: 
 Here is some core formulas used to find **cost function** and **gradient descent**<br/>
 
-### Cost function is a function that measures the perfomance of a Machine Learning model for given data<br/> ![formula](https://render.githubusercontent.com/render/math?math=J=\frac{1}{2m}*\Sigma(h^{i}%20-%20y^{i})^{2})
+### Cost function is a function that measures the perfomance of a Machine Learning model for given data<br/> 
+## ![formula](https://render.githubusercontent.com/render/math?math=J=\frac{1}{2m}*\Sigma(h^{i}%20-%20y^{i})^{2})
 
 
 

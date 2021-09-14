@@ -8,7 +8,7 @@
 
 # Logistic regression   
 
-*Logistic regression, despite its name, is a classification model rather than regression model. It means that as output we will have {0,1}, **True or False***<br/>
+*Logistic regression, despite its name, is a classification model rather than regression model.It means as output we will have {0,1}, **True or False***<br/>
 Logistic regression is a simple and more efficient method for binary and linear classification problems.<br/>
 In this example, it is used to classify pictures with and without cats.
 
@@ -54,6 +54,7 @@ As a input data, we have two **Hierarchical Data Format** files:
 
 [**.h5**](https://en.wikipedia.org/wiki/Hierarchical_Data_Format) files cannot be easily shown as previous ones cause they contain extremely large amount of input data as multidimensional arrays.<br/>
 Each image has three features(64(width), 64(height) and 3(RGB)) and we need to have all the pixels as features. **So, total number of features will be: 64*64*3 = 12228**.**
+
 
 Let's try to show the pictrure:
 
