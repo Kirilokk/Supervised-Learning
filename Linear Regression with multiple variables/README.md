@@ -20,12 +20,12 @@ To keep code organized, it's important to make project structure well.
 ```
 
 project
-    │──── core              - main parts of core. 
-    │       ├── optimize.py         - update function.
-    │       └── regression.py       - main components of linReg.
+    │──── core                       - main parts of core. 
+    │       ├── optimize.py          - update function.
+    │       └── regression.py        - main components of linReg.
     │   
     │   
-    │──── data            - data manipulation
+    │──── data                       - data manipulation
     │       ├── dataPreparation.py   - data load and standardization.
     │       └── dataVisualisation.py - test/train visualisation.
     │
@@ -88,6 +88,34 @@ Here is some core formulas used to find **cost function** and **gradient descent
 
 
 ## The results
+
+```python
+
+# Training set
+plt.figure(figsize=(12, 5))
+
+plt.subplot(1,2,1)
+plt.title("Training set")
+plt.scatter(train_set_y, d["Y_prediction_train"])
+plt.plot([0, 50], [0, 50], "--k")
+plt.axis("tight")
+plt.xlabel("True price ($1000s)")
+plt.ylabel("Predicted price ($1000s)")
+plt.tight_layout()
+
+# Test set
+plt.subplot(1,2,2)
+plt.title("Test set")
+plt.scatter(test_set_y, d["Y_prediction_test"])
+plt.plot([0, 50], [0, 50], "--k")
+plt.axis("tight")
+plt.xlabel("True price ($1000s)")
+plt.ylabel("Predicted price ($1000s)")
+plt.tight_layout()
+
+plt.show()
+
+```
 
 As a result of Linear regression with multiple variables algorithm, we got quite nice linear dependecy between predicted and true values
 where the straight line represents the relation between price and number of features.

@@ -11,6 +11,8 @@
 Not everything we can visualise with a straight line. Sometimes the prediction may be unpredictable. In case of this, our solution is **Polynomial Ridge Regression**.
 In this type of regression the input parameters are used to create higher nth degree polynomials on which a model is trained for prediction. As a result, we will have a curve representing our dataset.
 
+![alt text](media/LinVsRidge.png "^_^")​
+
 
 As for **Ridge regression**, it's quite useful regularization technique used to adress over-fitting*(when a statistical model fits exactly against its training data and againts test examples fails).*
 
@@ -20,6 +22,31 @@ It is very similar to Linear Regression only that it differs in cost function. H
 # Ridge regression formula used in algorithm:
 
 ![alt text](media/Ridge_regression_formula.gif "^_^")​
+
+
+# Project Structure
+
+To keep code organized, it's important to make project structure well.
+```
+
+project
+    │──── core                            - main parts of projects. 
+    │       └── ridgeRegularization       - main components of L2(Ridge) regularization
+    │
+    │ 
+    │──── utils                           - additional useful parts of project
+    │       └── featureTransform.py       - feature polynomial combinations
+    │
+    │
+    │──── data                            - data manipulation
+    │       ├── dataPreparation.py        - data load and standardization 
+    │       └── dataVisualisation.py      - test/train visualisation
+    │
+    │
+    └───── interactor             
+            └── index.py.                 - script to run polynomial regression
+
+```
 
 
 ## Data view

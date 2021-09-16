@@ -30,14 +30,14 @@ To keep code organized, it's important to make project structure well.
 ```
 
 project
-    │──── core              - main parts of core. 
+    │──── core                      - main parts of core. 
     │       ├── optimize.py         - update function.
     │       ├── regression.py       - main components of linReg.
     │       └── regression.py       - sigmoid function implementation
     │   
     │   
-    │──── data            - data manipulation
-    │       └── dataPreparation.py   - data load and standardization.
+    │──── data                      - data manipulation
+    │       └── dataPreparation.py  - data load and standardization.
     │     
     │
     └───── interactor             
